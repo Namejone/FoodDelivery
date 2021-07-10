@@ -197,11 +197,15 @@
         padding: 34px 0px;
     }
     .banner-content-wrapper {
-        margin-top: 50px;
+        margin-top: 20px;
     }
     .banner-form-wrapper {
         text-align: left;
     }
+    .single-way-work {
+        margin-bottom: 40px;
+    }
+    
     .banner-form-btns a.btn.banner-btn {
         width: 96px;
     }
@@ -376,6 +380,12 @@
     }
     .works-content {
         padding: 0px 20px;
+    }
+    .offer-dish-info h6 {
+        margin-bottom: 12px;
+    }
+    .works-icon {
+        margin-bottom: 20px;
     }
 }
 
