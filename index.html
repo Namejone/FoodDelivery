@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 
 
-    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
     
@@ -32,16 +32,23 @@
                 <!-- logo-area -->
 
                 <!-- delivery-info -->
-                <div class="delivery-area text-center">
-                    <p><strong>Deliver to:</strong><span><i class="fas fa-map-marker-alt"></i></span> All around the country</p>
+                <div class="delivery-area d-none d-md-block text-center">
+                    <p><strong>Deliver to:</strong><span><i class="fas fa-map-marker-alt"></i></span>All around the country</p>
                 </div>
                 <!-- delivery-info -->
 
                 <!-- login-btn -->
-                <div class="header-btn-area text-end">
+                <div class="header-btn-area d-none d-md-block text-end">
                     <a href="" class="btn login-btn"><span><i class="fas fa-user"></i></span>Login</a>
                 </div>
                 <!-- login-btn_End -->
+
+                <!-- mobo-bar -->
+                <div class="mobo-bar d-md-none d-lg-none">
+                    <span class="bar"><i class="far fa-bars"></i></span>
+                </div>
+                <!-- mobo-bar -->
+
             </div>
         </div>
     </header>
@@ -53,7 +60,7 @@
         <section class="banner-area">
             <div class="container">
                <div class="row align-items-center">
-                <div class="col-lg-6 col-md-6">
+                <div class="col-lg-6 col-md-7 order-2 order-md-1">
                     <div class="banner-content-wrapper">
                         <h1>Are you starving?</h1>
                         <p>Time to order food</p>
@@ -76,7 +83,7 @@
 
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6">
+                <div class="col-lg-6 col-md-5 order-1 order-md-2">
                     <div class="banner-food-plate text-center">
                         <img src="assets/img/banner-plate.png" alt="">
                     </div>
@@ -87,7 +94,7 @@
         <!-- banner-section -->
 
         <!-- offer-items -->
-        <div class="offer-items-wrapper">
+        <section class="offer-items-wrapper">
             <div class="container">
                 <div class="offer-wrap">
                     <!-- single-dish-offer -->
@@ -148,11 +155,11 @@
                     <!-- single-dish-offer -->
                 </div>
             </div>
-        </div>
+        </section>
         <!-- offer-items -->
 
         <!-- how works -->
-        <div class="how-works-area">
+        <section class="how-works-area">
             <div class="section-title text-center">
                 <h2>How does it work</h2>
             </div>
@@ -160,7 +167,7 @@
                 <div class="row">
                     <div class="col-lg-10 mx-auto">
                         <div class="row">
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="single-way-work text-center">
                                     <div class="works-icon">
                                         <img src="assets/img/icons/h-1.svg" alt="">
@@ -171,7 +178,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="single-way-work text-center">
                                     <div class="works-icon">
                                         <img src="assets/img/icons/h-2.svg" alt="">
@@ -182,7 +189,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="single-way-work text-center">
                                     <div class="works-icon">
                                         <img src="assets/img/icons/h-3.svg" alt="">
@@ -193,7 +200,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="single-way-work text-center">
                                     <div class="works-icon">
                                         <img src="assets/img/icons/h-4.svg" alt="">
@@ -208,11 +215,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- how works_End -->
 
         <!-- popular-items -->
-        <div class="popular-items">
+        <section class="popular-items">
             <div class="section-title text-center">
                 <h2>Popular items</h2>
             </div>
@@ -331,11 +338,11 @@
                     <!-- single-populer-item -->
                 </div>
             </div>
-        </div>
+        </section>
         <!-- popular-items-end -->
 
         <!-- featured-items -->
-        <div class="featured-products">
+        <section class="featured-products">
             <div class="section-title text-center">
                 <h2>Featured Restaurants</h2>
             </div>
@@ -502,11 +509,11 @@
                     <button type="button" class="btn view-more-btn">View All <span><i class="fal fa-angle-right"></i></span></button>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- featured-items_end -->
 
         <!-- search-food -->
-        <div class="search-food-area">
+        <section class="search-food-area">
             <div class="container">
                 <div class="section-title-wrapper d-flex align-items-center justify-content-between">
                     <div class="area-title">
@@ -591,13 +598,218 @@
                 </div>
 
             </div>
-        </div>
+        </section>
         <!-- search-food -->
+
+        <!-- app-feature -->
+        <section class="app-feature position-relative">
+            <img class="app-feature-bottom-shape d-none d-md-block" src="assets/img/app-feature-shape.png" alt="">
+            <img class="app-feature-bottom-shape d-md-none d-lg-none" src="assets/img/app-feature-shape-2.png" alt="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="row app-feature-weap">
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-feature d-flex align-items-center">
+                                    <div class="feature-icon">
+                                        <img src="assets/img/icons/tag.png" alt="">
+                                    </div>
+                                    <div class="feature-text">
+                                        <h4>Daily <br> Discounts</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-feature d-flex align-items-center">
+                                    <div class="feature-icon">
+                                        <img src="assets/img/icons/map-marker.svg" alt="">
+                                    </div>
+                                    <div class="feature-text">
+                                        <h4>Live <br> Tracking</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-feature d-flex align-items-center">
+                                    <div class="feature-icon">
+                                        <img src="assets/img/icons/scooter.svg" alt="">
+                                    </div>
+                                    <div class="feature-text">
+                                        <h4>Quick <br> Delivery</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row download-app-wrapper">
+                            <div class="col-lg-6">
+                                <div class="mobile-app">
+                                    <img src="assets/img/mobile.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="download-text">
+                                    <h3>Install the app</h3>
+                                    <p>It's never been easier to order food. Look for the finest discounts and you'll be lost in a world of delectable food.</p>
+
+                                    <div class="app-download-btns">
+                                        <a href=""><img src="assets/img/icons/app-store.png" alt=""></a>
+                                        <a href=""><img src="assets/img/icons/play-store.png" alt=""></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- app-feature -->
+
+        <!-- cta-area -->
+        <section class="cta-area" style="background-image: url('assets/img/cta-bg.png');">
+            <div class="container">
+                <div class="cta-content">
+                    <h1>Are you ready to</h1>
+                    <div class="order-procid-btn">
+                        <a class="btn procide-btn" href="">Proceed to order <span><i class="fal fa-angle-right"></i></span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- cta-area_End -->
 
     </main>
     <!-- main -->
 
     <!-- footer -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row footer-top-city">
+                <div class="col-lg-12">
+                    <div class="top-city-wrapper">
+                        <h5>OUR TOP CITIES</h5>
+                        <div class="top-city-wrapp">
+                            <div class="single-city-wrap">
+                                <ul>
+                                    <li><a href="">San Francisco</a></li>
+                                    <li><a href="">Miami</a></li>
+                                    <li><a href="">San Diego</a></li>
+                                    <li><a href="">East Bay</a></li>
+                                    <li><a href="">Long Beach</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-city-wrap">
+                                <ul>
+                                    <li><a href="">Los Angeles</a></li>
+                                    <li><a href="">Washington DC</a></li>
+                                    <li><a href="">Seattle</a></li>
+                                    <li><a href="">Portland</a></li>
+                                    <li><a href="">Nashville</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-city-wrap">
+                                <ul>
+                                    <li><a href="">New York City</a></li>
+                                    <li><a href="">Orange County</a></li>
+                                    <li><a href="">Atlanta</a></li>
+                                    <li><a href="">Charlotte</a></li>
+                                    <li><a href="">Denver</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-city-wrap">
+                                <ul>
+                                    <li><a href="">Chicago</a></li>
+                                    <li><a href="">Phoenix</a></li>
+                                    <li><a href="">LAs Vegas</a></li>
+                                    <li><a href="">Sacramento</a></li>
+                                    <li><a href="">Oklahoma City</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-city-wrap">
+                                <ul>
+                                    <li><a href="">Columbus</a></li>
+                                    <li><a href="">New Mexico</a></li>
+                                    <li><a href="">Albuquerque</a></li>
+                                    <li><a href="">Sacramento</a></li>
+                                    <li><a href="">New Orleans</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row footer-menus">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-6">
+                            <div class="footer-menu">
+                                <h5>COMPANY</h5>
+                                <ul>
+                                    <li><a href="">About Us</a></li>
+                                    <li><a href="">Team</a></li>
+                                    <li><a href="">Careers</a></li>
+                                    <li><a href="">Blog</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-6">
+                            <div class="footer-menu">
+                                <h5>CONTACT</h5>
+                                <ul>
+                                    <li><a href="">Help & Support</a></li>
+                                    <li><a href="">Partner with us</a></li>
+                                    <li><a href="">Ride with us</a></li>
+                                    <li><a href="">Work with us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-6">
+                            <div class="footer-menu">
+                                <h5>LEGAL</h5>
+                                <ul>
+                                    <li><a href="">Terms & Conditions</a></li>
+                                    <li><a href="">Refund & Cancellation</a></li>
+                                    <li><a href="">Privacy Policy</a></li>
+                                    <li><a href="">Cookie Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-6">
+                            <div class="footer-menu">
+                                <h5>CONTACT</h5>
+                                <ul>
+                                    <li><a href="">Terms & Conditions</a></li>
+                                    <li><a href="">Refund & Cancellation</a></li>
+                                    <li><a href="">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8 mx-md-auto">
+                    <div class="follow-us">
+                        <h5>FOLLOW US</h5>
+                        <h4>Receive exclusive offers and discounts in your mailbox</h4>
+                        <form action="">
+                            <div class="email-form-wrapper d-flex align-items-center justify-content-between">
+                                <div class="email-enput position-relative">
+                                    <input type="text" placeholder="Enter email">
+                                    <span><i class="fas fa-envelope"></i></span>
+                                </div>
+                                <button type="submit" class="btn btn-subcribe">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row copy-right text-center">
+                <span>All rights Reserved</span>
+            </div>
+        </div>
+    </footer>
     <!-- footer -->
 
     <script src="assets/js/jquery-3.6.0.min.js"></script>
