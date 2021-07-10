@@ -120,6 +120,7 @@ input:focus{
 }
 .btn:focus{
     outline: none;
+    box-shadow: none;
 }
 
 .owl-carousel .owl-nav div:hover{
