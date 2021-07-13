@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Document</title>
+
+
+    <!-- css Here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.nice-number.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css">
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    
+    <!-- header-area -->
+    <header class="header-area">
+        <div class="container">
+            <div class="header-wrapper d-flex align-items-center justify-content-between">
+                <!-- logo-area -->
+                <div class="logo-area">
+                    <a href="">
+                        <h2>LOGO</h2>
+                    </a>
+                </div>
+                <!-- logo-area -->
+
+                <!-- delivery-info -->
+                <div class="delivery-area d-none d-md-block text-center">
+                    <p><strong>Deliver to:</strong><span><i class="fas fa-map-marker-alt"></i></span>All around the country</p>
+                </div>
+                <!-- delivery-info -->
+
+                <!-- login-btn -->
+                <div class="header-btn-area d-none d-md-block text-end">
+                    <a href="" class="btn login-btn"><span><i class="fas fa-user"></i></span>Login</a>
+                </div>
+                <!-- login-btn_End -->
+
+                <!-- mobo-bar -->
+                <div class="mobo-bar d-md-none d-lg-none">
+                    <span class="bar"><i class="far fa-bars"></i></span>
+                </div>
+                <!-- mobo-bar -->
+
+            </div>
+        </div>
+    </header>
+    <!-- header-area_End -->
+
+    <!-- main -->
+    <main>
+       <!-- banner_resturent -->
+       <section class="banner_pesturent d-flex align-items-center justify-content-center overlay  bg-defult" style="background-image: url('assets/img/bg/resturent-filter-bg.png');">
+            <div class="banner-details-wrapper">
+                <div class="resturent-details d-flex align-items-center">
+                    <div class="resturent-logo">
+                        <img src="assets/img/result/01.png" alt="">
+                    </div>
+                    <div class="resturent-details-text">
+                        <h4>Good Food Restaurant</h4>
+                        <div class="resturent-rattings d-flex align-items-center">
+                            <div class="resturent-stars">
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                            </div>
+
+                            <span class="space-line">-</span>
+
+                            <div class="resturent-commets">
+                                <p>177 Review</p>
+                            </div>
+                        </div>
+                        <div class="locations-resturent d-flex align-items-center"><span><i class="fas fa-map-marker-alt"></i></span>Restaurant address goes here, Complete address</div>
+                    </div>
+                </div>
+                <div class="over-view-wrapper">
+                    <div class="over-view-wrap">
+                        <h4>Overview</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempor eros vitae lectus eleifend, id ultrices urna rhoncus. Phasellus porttitor non enim at iaculis. Aliquam fringilla vestibulum nulla rhoncus volutpat. Nunc at tempus nulla. Proin aliquet, est vitae volutpat fringilla, est urna tincidunt turpis, ut vestibulum ex velit quis tortor. Nulla nec bibendum eros. Duis eget eros ex.</p>
+                    </div>
+                    <div class="share-btns">
+                        <button type="button" class="btn"><span><img src="assets/img/icons/share.svg" alt=""></span>Share</button>
+                        <button type="button" class="btn"><span><img src="assets/img/icons/bookmark.svg" alt=""></span>Bookmark</button>
+                    </div>
+                </div>
+            </div>
+       </section>
+       <!-- banner_resturent -->
+
+
+       <!-- filter-wrapper -->
+       <section class="filter-main-wrapper">
+           <div class="container">
+                <div class="filter-wrapper resturent-details-page">
+                    <!-- filter-lafter-bar -->
+                    <div class="details-bar-left">
+
+                        <!-- single-result-widget -->
+                        <div class="single-result-widget">
+                            <h5>Search By Dish</h5>
+                            <div class="result-search">
+                                <input type="text" placeholder="Enter dish name">
+                            </div>
+                        </div>
+                        <!-- single-result-widget -->
+
+                        <!-- single-result-widget -->
+                        <div class="single-result-widget">
+                            <h5>Categories</h5>
+                            
+                            <!-- categories -->
+                            <div class="categories-list">
+                                <ul>
+                                    <li><span class="cat-name">We love BBQ!</span> <span class="cat-posts">(4)</span></li>
+                                    <li><span class="cat-name">EM Weeks</span> <span class="cat-posts">(2)</span></li>
+                                    <li><span class="cat-name">Pizza</span> <span class="cat-posts">(1)</span></li>
+                                    <li><span class="cat-name">Pizza free style</span> <span class="cat-posts">(2)</span></li>
+                                    <li><span class="cat-name">Pizza rolls & breads</span> <span class="cat-posts">(7)</span></li>
+                                    <li><span class="cat-name">Pizza pepperoni</span> <span class="cat-posts"></span></li>
+                                    <li><span class="cat-name">Buffalo Pizza</span> <span class="cat-posts"></span></li>
+                                    <li><span class="cat-name">Veggie Pizza</span> <span class="cat-posts"></span></li>
+
+                                    <a id="loadMore" class="cat-more" href="">View more</a>
+                                    <!-- <div id="showLess">Show less</div> -->
+                                </ul>
+                            </div>
+                            <!-- categories -->
+
+                        </div>
+                        <!-- single-result-widget -->
+
+
+                        <button type="button" class="btn reset-btn">Reset All</button>
+                    </div>
+                    <!-- filter-lafter-bar -->
+
+                    <!-- resturent-food-item-details-wrapper -->
+                    <div class="resturent-food-item-details-wrapper">
+                        <!-- search-result-info -->
+                        <div class="search-result-info">
+                            <p>Showing 1 - 8 of 12 results</p>
+                        </div>
+                        <!-- search-result-info -->
+
+                        <!-- dish-area -->
+                        <div class="dish-details-wrapper">
+                            <!-- single-dish -->
+                            <div class="single-dish">
+
+                                <div class="d-flex align-items-center position-relative">
+                                    <div class="dish-imag">
+                                        <img src="assets/img/resturent-details/03.png" alt="">
+                                    </div>
+                                    <div class="dish-details">
+                                        <h4>Pizza dish name</h4>
+                                        <p>Little product details, some description 
+                                            or little info about ingredients</p>
+                                        <span class="dish-price">Price: <strong>$79.00</strong></span>
+                                    </div>
+                                    <button type="submit" data-bs-toggle="collapse" data-bs-target="#dish-2" class="more-details-btn"><span><i class="far fa-plus"></i></span></button>
+                                </div>
+                                <div class="collapse" id="dish-2">
+                                    <div class="food-extra">
+                                        <!-- fopod-extra-item -->
+                                        <div class="food-extra-single d-flex align-items-center justify-content-between">
+                                            <h6>Pizza Name:</h6>
+                                            <div class="food-extra-content">
+                                                <input type="text" placeholder="Single: $10">
+                                            </div>
+                                        </div>
+                                        <!-- fopod-extra-item-end -->
+
+
+                                        <!-- fopod-extra-item -->
+                                        <div class="food-extra-single d-flex align-items-start justify-content-between">
+                                            <h6>Pizza Extra:</h6>
+                                            <div class="food-extra-content">
+                                                
+                                                <!-- single-check-box -->
+                                                <div class="single-custom-check-box">
+                                                    <input type="checkbox" id="extra-4">
+                                                    <label for="extra-4"><span></span> Extra name goes here</label>
+                                                </div>
+                                                <!-- single-check-box -->
+
+                                                <!-- single-check-box -->
+                                                <div class="single-custom-check-box">
+                                                    <input type="checkbox" id="extra-5">
+                                                    <label for="extra-5"><span></span> Extra name goes here</label>
+                                                </div>
+                                                <!-- single-check-box -->
+
+                                                <!-- single-check-box -->
+                                                <div class="single-custom-check-box">
+                                                    <input type="checkbox" id="extra-6">
+                                                    <label for="extra-6"><span></span> Extra name goes here</label>
+                                                </div>
+                                                <!-- single-check-box -->
+
+                                                <a class="sow-more-extra" href=""><span><i class="far fa-angle-down"></i></span>Show 1 more</a>
+
+                                                <div class="extra-counter">
+                                                    <input type="number" value="0">
+                                                </div>
+
+                                                <div class="order--btn">
+                                                    <button class="btn" type="button">$10</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <!-- fopod-extra-item-end -->
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single-dish -->
+                            
+                            <!-- single-dish -->
+                            <div class="single-dish">
+
+                                <div class="d-flex align-items-center position-relative">
+                                    <div class="dish-imag">
+                                        <img src="assets/img/resturent-details/01.png" alt="">
+                                    </div>
+                                    <div class="dish-details">
+                                        <h4>Pizza dish name</h4>
+                                        <p>Little product details, some description 
+                                            or little info about ingredients</p>
+                                        <span class="dish-price">Price: <strong>$79.00</strong></span>
+                                    </div>
+                                    <button type="submit" data-bs-toggle="collapse" data-bs-target="#collapseExample" class="more-details-btn"><span><i class="far fa-plus"></i></span></button>
+                                </div>
+                                <div class="collapse" id="collapseExample">
+                                    <div class="food-extra">
+                                        <!-- fopod-extra-item -->
+                                        <div class="food-extra-single d-flex align-items-center justify-content-between">
+                                            <h6>Pizza Name:</h6>
+                                            <div class="food-extra-content">
+                                                <input type="text" placeholder="Single: $10">
+                                            </div>
+                                        </div>
+                                        <!-- fopod-extra-item-end -->
+
+
+                                        <!-- fopod-extra-item -->
+                                        <div class="food-extra-single d-flex align-items-start justify-content-between">
+                                            <h6>Pizza Extra:</h6>
+                                            <div class="food-extra-content">
+                                                
+                                                <!-- single-check-box -->
+                                                <div class="single-custom-check-box">
+                                                    <input type="checkbox" id="extra-1">
+                                                    <label for="extra-1"><span></span> Extra name goes here</label>
+                                                </div>
+                                                <!-- single-check-box -->
+
+                                                <!-- single-check-box -->
+                                                <div class="single-custom-check-box">
+                                                    <input type="checkbox" id="extra-2">
+                                                    <label for="extra-2"><span></span> Extra name goes here</label>
+                                                </div>
+                                                <!-- single-check-box -->
+
+                                                <!-- single-check-box -->
+                                                <div class="single-custom-check-box">
+                                                    <input type="checkbox" id="extra-3">
+                                                    <label for="extra-3"><span></span> Extra name goes here</label>
+                                                </div>
+                                                <!-- single-check-box -->
+
+                                                <a class="sow-more-extra" href=""><span><i class="far fa-angle-down"></i></span>Show 1 more</a>
+
+                                                <div class="extra-counter">
+                                                    <input type="number" value="0">
+                                                </div>
+
+                                                <div class="order--btn">
+                                                    <button class="btn" type="button">$10</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <!-- fopod-extra-item-end -->
+
+                                        <!--  -->
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single-dish -->
+
+                            <!-- single-dish -->
+                            <div class="single-dish">
+
+                                <div class="d-flex align-items-center position-relative">
+                                    <div class="dish-imag">
+                                        <img src="assets/img/resturent-details/03.png" alt="">
+                                    </div>
+                                    <div class="dish-details">
+                                        <h4>Pizza dish name</h4>
+                                        <p>Little product details, some description 
+                                            or little info about ingredients</p>
+                                        <span class="dish-price">Price: <strong>$79.00</strong></span>
+                                    </div>
+                                    <button type="submit" data-bs-toggle="collapse" data-bs-target="#dish-3" class="more-details-btn"><span><i class="far fa-plus"></i></span></button>
+                                </div>
+                                <div class="collapse" id="dish-3">
+                                    <div class="food-extra">
+                                        <!-- fopod-extra-item -->
+                                        <div class="food-extra-single d-flex align-items-center justify-content-between">
+                                            <h6>Pizza Name:</h6>
+                                            <div class="food-extra-content">
+                                                <input type="text" placeholder="Single: $10">
+                                            </div>
+                                        </div>
+                                        <!-- fopod-extra-item-end -->
+
+
+                                        <!-- fopod-extra-item -->
+                                        <div class="food-extra-single d-flex align-items-start justify-content-between">
+                                            <h6>Pizza Extra:</h6>
+                                            <div class="food-extra-content">
+                                                
+                                                <!-- single-check-box -->
+                                                <div class="single-custom-check-box">
+                                                    <input type="checkbox" id="extra-7">
+                                                    <label for="extra-7"><span></span> Extra name goes here</label>
+                                                </div>
+                                                <!-- single-check-box -->
+
+                                                <!-- single-check-box -->
+                                                <div class="single-custom-check-box">
+                                                    <input type="checkbox" id="extra-8">
+                                                    <label for="extra-8"><span></span> Extra name goes here</label>
+                                                </div>
+                                                <!-- single-check-box -->
+
+                                                <!-- single-check-box -->
+                                                <div class="single-custom-check-box">
+                                                    <input type="checkbox" id="extra-9">
+                                                    <label for="extra-9"><span></span> Extra name goes here</label>
+                                                </div>
+                                                <!-- single-check-box -->
+
+                                                <a class="sow-more-extra" href=""><span><i class="far fa-angle-down"></i></span>Show 1 more</a>
+
+                                                <div class="extra-counter">
+                                                    <input type="number" value="0">
+                                                </div>
+
+                                                <div class="order--btn">
+                                                    <button class="btn" type="button">$10</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <!-- fopod-extra-item-end -->
+
+                                        <!--  -->
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single-dish -->
+
+                            <!-- single-dish -->
+                            <div class="single-dish">
+
+                                <div class="d-flex align-items-center position-relative">
+                                    <div class="dish-imag">
+                                        <img src="assets/img/resturent-details/04.png" alt="">
+                                    </div>
+                                    <div class="dish-details">
+                                        <h4>Pizza dish name</h4>
+                                        <p>Little product details, some description 
+                                            or little info about ingredients</p>
+                                        <span class="dish-price">Price: <strong>$79.00</strong></span>
+                                    </div>
+                                    <button type="submit" data-bs-toggle="collapse" data-bs-target="#dish-4" class="more-details-btn"><span><i class="far fa-plus"></i></span></button>
+                                </div>
+                                <div class="collapse" id="dish-4">
+                                    <div class="food-extra">
+                                        <!-- fopod-extra-item -->
+                                        <div class="food-extra-single d-flex align-items-center justify-content-between">
+                                            <h6>Pizza Name:</h6>
+                                            <div class="food-extra-content">
+                                                <input type="text" placeholder="Single: $10">
+                                            </div>
+                                        </div>
+                                        <!-- fopod-extra-item-end -->
+
+
+                                        <!-- fopod-extra-item -->
+                                        <div class="food-extra-single d-flex align-items-start justify-content-between">
+                                            <h6>Pizza Extra:</h6>
+                                            <div class="food-extra-content">
+                                                
+                                                <!-- single-check-box -->
+                                                <div class="single-custom-check-box">
+                                                    <input type="checkbox" id="extra-10">
+                                                    <label for="extra-10"><span></span> Extra name goes here</label>
+                                                </div>
+                                                <!-- single-check-box -->
+
+                                                <!-- single-check-box -->
+                                                <div class="single-custom-check-box">
+                                                    <input type="checkbox" id="extra-11">
+                                                    <label for="extra-11"><span></span> Extra name goes here</label>
+                                                </div>
+                                                <!-- single-check-box -->
+
+                                                <!-- single-check-box -->
+                                                <div class="single-custom-check-box">
+                                                    <input type="checkbox" id="extra-12">
+                                                    <label for="extra-12"><span></span> Extra name goes here</label>
+                                                </div>
+                                                <!-- single-check-box -->
+
+                                                <a class="sow-more-extra" href=""><span><i class="far fa-angle-down"></i></span>Show 1 more</a>
+
+                                                <div class="extra-counter">
+                                                    <input type="number" value="0">
+                                                </div>
+
+                                                <div class="order--btn">
+                                                    <button class="btn" type="button">$10</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <!-- fopod-extra-item-end -->
+
+                                        <!--  -->
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single-dish -->
+                        </div>
+                        <!-- dish-area -->
+
+                    </div>
+                    <!-- resturent-food-item-details-wrapper_End -->
+
+                    <!-- side-bar-right-area -->
+                    <div class="side-bar-right-area">
+                        <div class="buskte-area">
+                            <div class="basket-header text-center">
+                                <h5>Basket</h5>
+                            </div>
+                            
+                        
+                            <!-- cart-foods -->
+                            <div class="basket-foods">
+                               <!-- single-sselect-food -->
+                               <div class="single-select-food position-relative">
+                                   <h4><a href="">Pizza dish name</a></h4>
+                                   <p>Little product details, some description or little info about... ingredients</p>
+                                   <div class="food-items d-flex align-items-center justify-content-between">
+                                        <div class="food-price-details">
+                                            <h6>$79.00</h6>
+                                        </div>
+                                        <div class="food-count-area">
+                                            <input type="number" value="0">
+                                        </div>
+                                   </div>
+                               </div>
+                               <!-- single-sselect-food -->
+                               <!-- single-sselect-food -->
+                               <div class="single-select-food position-relative">
+                                   <h4><a href="">Pizza dish name</a></h4>
+                                   <p>Little product details, some description or little info about... ingredients</p>
+                                   <div class="food-items d-flex align-items-center justify-content-between">
+                                        <div class="food-price-details">
+                                            <h6>$79.00</h6>
+                                        </div>
+                                        <div class="food-count-area">
+                                            <input type="number" value="0">
+                                        </div>
+                                   </div>
+                               </div>
+                               <!-- single-sselect-food -->
+                            </div>
+                            <!-- cart-foods -->
+
+                            <!-- total-cost-area -->
+                            <div class="totoal-cost-area">
+                                <ul>
+                                    <li><span>Sub-total</span><span>$358</span></li>
+                                    <li><span>Delivery fee</span><span>free</span></li>
+                                    <li><span>Total</span><span>$358</span></li>
+                                </ul>
+                            </div>
+                            <!-- total-cost-area_End -->
+
+                            <!-- additional-info -->
+                            <div class="additional-info">
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Additional Info"></textarea>
+                            </div>
+                            <!-- additional-info -->
+                            
+                            
+                            <div class="order--btn-area">
+                                <button type="button" class="btn Order">Order</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- side-bar-right-area -->
+
+                </div>
+           </div>
+       </section>
+       <!-- filter-wrapper_end -->
+
+
+
+
+    </main>
+    <!-- main -->
+
+    <!-- footer -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row footer-top-city">
+                <div class="col-lg-12">
+                    <div class="top-city-wrapper">
+                        <h5>OUR TOP CITIES</h5>
+                        <div class="top-city-wrapp">
+                            <div class="single-city-wrap">
+                                <ul>
+                                    <li><a href="">San Francisco</a></li>
+                                    <li><a href="">Miami</a></li>
+                                    <li><a href="">San Diego</a></li>
+                                    <li><a href="">East Bay</a></li>
+                                    <li><a href="">Long Beach</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-city-wrap">
+                                <ul>
+                                    <li><a href="">Los Angeles</a></li>
+                                    <li><a href="">Washington DC</a></li>
+                                    <li><a href="">Seattle</a></li>
+                                    <li><a href="">Portland</a></li>
+                                    <li><a href="">Nashville</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-city-wrap">
+                                <ul>
+                                    <li><a href="">New York City</a></li>
+                                    <li><a href="">Orange County</a></li>
+                                    <li><a href="">Atlanta</a></li>
+                                    <li><a href="">Charlotte</a></li>
+                                    <li><a href="">Denver</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-city-wrap">
+                                <ul>
+                                    <li><a href="">Chicago</a></li>
+                                    <li><a href="">Phoenix</a></li>
+                                    <li><a href="">LAs Vegas</a></li>
+                                    <li><a href="">Sacramento</a></li>
+                                    <li><a href="">Oklahoma City</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-city-wrap">
+                                <ul>
+                                    <li><a href="">Columbus</a></li>
+                                    <li><a href="">New Mexico</a></li>
+                                    <li><a href="">Albuquerque</a></li>
+                                    <li><a href="">Sacramento</a></li>
+                                    <li><a href="">New Orleans</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row footer-menus">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-6">
+                            <div class="footer-menu">
+                                <h5>COMPANY</h5>
+                                <ul>
+                                    <li><a href="">About Us</a></li>
+                                    <li><a href="">Team</a></li>
+                                    <li><a href="">Careers</a></li>
+                                    <li><a href="">Blog</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-6">
+                            <div class="footer-menu">
+                                <h5>CONTACT</h5>
+                                <ul>
+                                    <li><a href="">Help & Support</a></li>
+                                    <li><a href="">Partner with us</a></li>
+                                    <li><a href="">Ride with us</a></li>
+                                    <li><a href="">Work with us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-6">
+                            <div class="footer-menu">
+                                <h5>LEGAL</h5>
+                                <ul>
+                                    <li><a href="">Terms & Conditions</a></li>
+                                    <li><a href="">Refund & Cancellation</a></li>
+                                    <li><a href="">Privacy Policy</a></li>
+                                    <li><a href="">Cookie Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-6">
+                            <div class="footer-menu">
+                                <h5>CONTACT</h5>
+                                <ul>
+                                    <li><a href="">Terms & Conditions</a></li>
+                                    <li><a href="">Refund & Cancellation</a></li>
+                                    <li><a href="">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8 mx-md-auto">
+                    <div class="follow-us">
+                        <h5>FOLLOW US</h5>
+                        <h4>Receive exclusive offers and discounts in your mailbox</h4>
+                        <form action="">
+                            <div class="email-form-wrapper d-flex align-items-center justify-content-between">
+                                <div class="email-enput position-relative">
+                                    <input type="text" placeholder="Enter email">
+                                    <span><i class="fas fa-envelope"></i></span>
+                                </div>
+                                <button type="submit" class="btn btn-subcribe">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row copy-right text-center">
+                <span>All rights Reserved</span>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.nice-number.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        $('input[type="number"]').niceNumber();
+
+
+
+    </script>
+</body>
+</html>

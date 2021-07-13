@@ -25,7 +25,17 @@
         width: 17%;
     }
 
-
+    /* result-filter-page */
+    .filter-left-bar {
+        min-width: auto;
+        padding-right: 25px;
+    }
+    .filter-wrapper {
+        grid-column-gap: 25px;
+    }
+    .result-items-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
 }
 
@@ -175,6 +185,55 @@
     .features-wrapper {
         grid-template-columns: repeat(3, 1fr);
     }
+    .irs--round .irs-line {
+        top: 12px;
+    }
+    .irs--round .irs-bar {
+        top: 12px;
+    }
+    /* Resturent - Filter page */
+    .filter-wrapper {
+        grid-template-columns: 1fr;
+        grid-row-gap: 40px;
+    }
+    .filter-left-bar {
+        min-width: auto;
+        padding-right: 0px;
+        border-right: 0px;
+    }
+    .single-result-widget h5 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+    .single-result-widget {
+        margin-bottom: 33px;
+    }
+    .single-result-widget {
+        margin-bottom: 33px;
+    }
+    .irs--round .irs-handle {
+        top: 3px;
+    }
+    .irs--round {
+        height: 30px;
+    }
+    .rangslider-value {
+        margin-top: 10px;
+    }
+    .single-result-widget.range-bar-widget h5 {
+        margin-bottom: 12px;
+    }
+    .pagination-area {
+        margin-top: 50px;
+    }
+    .banner_pesturent {
+        height: 486px;
+    }
+
+
+
+
+
 }
 
 @media (max-width: 767px) { 
@@ -387,6 +446,47 @@
     .works-icon {
         margin-bottom: 20px;
     }
+
+    /* Resturent - Filter page */
+    .filter-wrapper {
+        grid-template-columns: 1fr;
+        grid-row-gap: 60px;
+    }
+
+    .banner_pesturent {
+        height: 250px;
+    }
+
+    .banner_pesturent h2 {
+        font-size: 30px;
+        text-align: center;
+        line-height: 1.1;
+    }
+    .filter-main-wrapper {
+        padding: 60px 0px;
+    }
+    .single-result-widget h5 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    .irs--round .irs-bar {
+        top: 10px;
+    }
+    .irs--round .irs-line {
+        top: 10px;
+    }
+    .result-items-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .result-items-wrapper {
+        grid-column-gap: 25px;
+    }
+    .rangslider-value {
+        margin-top: 0px;
+    }
+
+
+
 }
 
 @media (max-width: 575px) { 
@@ -396,6 +496,9 @@
     .features-wrapper {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 30px 9px;
+    }
+    .result-items-wrapper {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 

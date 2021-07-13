@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Document</title>
+
+
+    <!-- css Here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css">
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    
+    <!-- header-area -->
+    <header class="header-area">
+        <div class="container">
+            <div class="header-wrapper d-flex align-items-center justify-content-between">
+                <!-- logo-area -->
+                <div class="logo-area">
+                    <a href="">
+                        <h2>LOGO</h2>
+                    </a>
+                </div>
+                <!-- logo-area -->
+
+                <!-- delivery-info -->
+                <div class="delivery-area d-none d-md-block text-center">
+                    <p><strong>Deliver to:</strong><span><i class="fas fa-map-marker-alt"></i></span>All around the country</p>
+                </div>
+                <!-- delivery-info -->
+
+                <!-- login-btn -->
+                <div class="header-btn-area d-none d-md-block text-end">
+                    <a href="" class="btn login-btn"><span><i class="fas fa-user"></i></span>Login</a>
+                </div>
+                <!-- login-btn_End -->
+
+                <!-- mobo-bar -->
+                <div class="mobo-bar d-md-none d-lg-none">
+                    <span class="bar"><i class="far fa-bars"></i></span>
+                </div>
+                <!-- mobo-bar -->
+
+            </div>
+        </div>
+    </header>
+    <!-- header-area_End -->
+
+    <!-- main -->
+    <main>
+       <!-- banner_resturent -->
+       <section class="banner_pesturent d-flex align-items-center justify-content-center overlay  bg-defult" style="background-image: url('assets/img/bg/resturent-filter-bg.png');">
+            <h2>Order from 456 restaurants</h2>
+       </section>
+       <!-- banner_resturent -->
+
+
+       <!-- filter-wrapper -->
+       <section class="filter-main-wrapper">
+           <div class="container">
+                <div class="filter-wrapper">
+                    <!-- filter-lafter-bar -->
+                    <div class="filter-left-bar">
+                        <!-- single-result-widget -->
+                        <div class="single-result-widget">
+                            <h5>Select Method</h5>
+                            <div class="select-method">
+                                <ul class="d-flex align-items-center">
+                                    <li class="custom-select">
+                                        <input type="radio" checked id="select-method-1" name="select-menod">
+                                        <label for="select-method-1">Delivery</label>
+                                    </li>
+                                    <li class="custom-select">
+                                        <input type="radio" id="select-method-2" name="select-menod">
+                                        <label for="select-method-2">Pickup</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- single-result-widget -->
+
+                        <!-- single-result-widget -->
+                        <div class="single-result-widget">
+                            <h5>Search By Location</h5>
+                            <div class="result-search">
+                                <input type="text" placeholder="Enter location address">
+                            </div>
+                        </div>
+                        <!-- single-result-widget -->
+
+                        <!-- single-result-widget -->
+                        <div class="single-result-widget">
+                            <h5>Categories</h5>
+                            
+                            <!-- categories -->
+                            <div class="categories-list">
+                                <ul>
+                                    <li><span class="cat-name">Beaf</span> <span class="cat-posts">(4)</span></li>
+                                    <li><span class="cat-name">Chicken</span> <span class="cat-posts">(2)</span></li>
+                                    <li><span class="cat-name">Pizza</span> <span class="cat-posts">(1)</span></li>
+                                    <li><span class="cat-name">Sandwich</span> <span class="cat-posts">(2)</span></li>
+                                    <li><span class="cat-name">Uncategroized</span> <span class="cat-posts">(7)</span></li>
+
+                                    <a id="loadMore" class="cat-more" href="">View more</a>
+                                    <!-- <div id="showLess">Show less</div> -->
+                                </ul>
+                            </div>
+                            <!-- categories -->
+
+                        </div>
+                        <!-- single-result-widget -->
+
+                        <!-- single-result-widget -->
+                        <div class="single-result-widget range-bar-widget">
+                            <h5>Filter By Price</h5>
+                            
+                            <!-- range-sldier-area -->
+                            <div class="rangeslider-area">
+                                <input type="text" class="js-range-slider" name="my_range" value="" data-skin="round" data-type="double" data-min="15" data-max="150" data-grid="false"/>
+                            
+                                <div class="rangslider-value d-flex align-items-center">
+                                    <p>Price:</p>
+                                    <div class="single-price-slider">
+                                        <input type="number" maxlength="3" value="15" class="from"/>
+                                        <span>$</span>
+                                    </div>
+                                    <div class="single-price-slider">
+                                        <input type="number" maxlength="3" value="150" class="to"/>
+                                        <span>$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- range-sldier-area -->
+
+                        </div>
+                        <!-- single-result-widget -->
+
+                        <!-- single-result-widget -->
+                        <div class="single-result-widget range-bar-widget">
+                            <h5>Filter By Delivery Price</h5>
+                            
+                            <!-- range-sldier-area -->
+                            <div class="rangeslider-area">
+                                <input type="text" class="js-range-slider" name="my_range_tow" value="" data-skin="round" data-type="double" data-min="0" data-max="1000" data-grid="false"/>
+                            
+                                <div class="rangslider-value d-flex align-items-center">
+                                    <p>Price:</p>
+                                    <div class="single-price-slider">
+                                        <input type="number" maxlength="3" value="15" class="from"/>
+                                        <span>$</span>
+                                    </div>
+                                    <div class="single-price-slider">
+                                        <input type="number" maxlength="3" value="150" class="to"/>
+                                        <span>$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- range-sldier-area -->
+
+                        </div>
+                        <!-- single-result-widget -->
+
+                        <!-- single-result-widget -->
+                        <div class="single-result-widget range-bar-widget">
+                            <h5>Filter By Radius</h5>
+                            
+                            <!-- range-sldier-area -->
+                            <div class="rangeslider-area">
+                                <input type="text" class="js-range-slider" name="my_range" value="" data-skin="round" data-type="double" data-min="0" data-max="1000" data-grid="false"/>
+                            
+                                <div class="rangslider-value d-flex align-items-center">
+                                    <p>Price:</p>
+                                    <div class="single-price-slider">
+                                        <input type="number" maxlength="3" value="15" class="from"/>
+                                        <span>$</span>
+                                    </div>
+                                    <div class="single-price-slider">
+                                        <input type="number" maxlength="3" value="150" class="to"/>
+                                        <span>$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- range-sldier-area -->
+
+                        </div>
+                        <!-- single-result-widget -->
+                        <button type="button" class="btn reset-btn">Reset All</button>
+                    </div>
+                    <!-- filter-lafter-bar -->
+
+                    <!-- filter-result-area -->
+                    <div class="filter-result-area">
+                        <!-- search-result-info -->
+                        <div class="search-result-info">
+                            <p>Showing 1 - 8 of 12 results</p>
+                        </div>
+                        <!-- search-result-info -->
+
+                        <!-- result-items-wrapper -->
+                        <div class="result-items-wrapper">
+
+                            <!-- single-result-item -->
+                            <div class="single-result-item d-flex align-items-center">
+                                <div class="result-item-img">
+                                    <img src="assets/img/result/01.png" alt="">
+                                </div>
+                                <div class="result-item-content">
+                                    <h6><a href="">Restaurant Name</a></h6>
+                                    <span class="tags">Greek, Fish, Salads</span>
+                                    <ul class="d-flex align-items-center flex-wrap">
+                                        <li><span><img src="assets/img/result/clock.png" alt=""></span>30min</li>
+                                        <li><span><img src="assets/img/result/delivery-man.png" alt=""></span>$50</li>
+                                        <li><span><img src="assets/img/result/bag.png" alt=""></span>Min. $100</li>
+                                    </ul>
+                                    <div class="result-bottom d-flex align-items-center justify-content-between">
+                                        <div class="badge open-now">Open now</div>
+                                        <div class="stars-ratings">
+                                            <span><i class="fas fa-star"></i></span>
+                                            177
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single-result-item -->
+
+                            <!-- single-result-item -->
+                            <div class="single-result-item d-flex align-items-center">
+                                <div class="result-item-img">
+                                    <img src="assets/img/result/02.png" alt="">
+                                </div>
+                                <div class="result-item-content">
+                                    <h6><a href="">Restaurant Name</a></h6>
+                                    <span class="tags">Greek, Fish, Salads</span>
+                                    <ul class="d-flex align-items-center flex-wrap">
+                                        <li><span><img src="assets/img/result/clock.png" alt=""></span>30min</li>
+                                        <li><span><img src="assets/img/result/delivery-man.png" alt=""></span>$50</li>
+                                        <li><span><img src="assets/img/result/bag.png" alt=""></span>Min. $100</li>
+                                    </ul>
+                                    <div class="result-bottom d-flex align-items-center justify-content-between">
+                                        <div class="badge open-now">Open now</div>
+                                        <div class="stars-ratings">
+                                            <span><i class="fas fa-star"></i></span>
+                                            177
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single-result-item -->
+
+                            <!-- single-result-item -->
+                            <div class="single-result-item d-flex align-items-center">
+                                <div class="result-item-img">
+                                    <img src="assets/img/result/03.png" alt="">
+                                </div>
+                                <div class="result-item-content">
+                                    <h6><a href="">Restaurant Name</a></h6>
+                                    <span class="tags">Greek, Fish, Salads</span>
+                                    <ul class="d-flex align-items-center flex-wrap">
+                                        <li><span><img src="assets/img/result/clock.png" alt=""></span>30min</li>
+                                        <li><span><img src="assets/img/result/delivery-man.png" alt=""></span>$50</li>
+                                        <li><span><img src="assets/img/result/bag.png" alt=""></span>Min. $100</li>
+                                    </ul>
+                                    <div class="result-bottom d-flex align-items-center justify-content-between">
+                                        <div class="badge open-now">Open now</div>
+                                        <div class="stars-ratings">
+                                            <span><i class="fas fa-star"></i></span>
+                                            177
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single-result-item -->
+
+                            <!-- single-result-item -->
+                            <div class="single-result-item d-flex align-items-center">
+                                <div class="result-item-img">
+                                    <img src="assets/img/result/04.png" alt="">
+                                </div>
+                                <div class="result-item-content">
+                                    <h6><a href="">Restaurant Name</a></h6>
+                                    <span class="tags">Greek, Fish, Salads</span>
+                                    <ul class="d-flex align-items-center flex-wrap">
+                                        <li><span><img src="assets/img/result/clock.png" alt=""></span>30min</li>
+                                        <li><span><img src="assets/img/result/delivery-man.png" alt=""></span>$50</li>
+                                        <li><span><img src="assets/img/result/bag.png" alt=""></span>Min. $100</li>
+                                    </ul>
+                                    <div class="result-bottom d-flex align-items-center justify-content-between">
+                                        <div class="badge open-now">Open now</div>
+                                        <div class="stars-ratings">
+                                            <span><i class="fas fa-star"></i></span>
+                                            177
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single-result-item -->
+
+                            <!-- single-result-item -->
+                            <div class="single-result-item d-flex align-items-center">
+                                <div class="result-item-img">
+                                    <img src="assets/img/result/05.png" alt="">
+                                </div>
+                                <div class="result-item-content">
+                                    <h6><a href="">Restaurant Name</a></h6>
+                                    <span class="tags">Greek, Fish, Salads</span>
+                                    <ul class="d-flex align-items-center flex-wrap">
+                                        <li><span><img src="assets/img/result/clock.png" alt=""></span>30min</li>
+                                        <li><span><img src="assets/img/result/delivery-man.png" alt=""></span>$50</li>
+                                        <li><span><img src="assets/img/result/bag.png" alt=""></span>Min. $100</li>
+                                    </ul>
+                                    <div class="result-bottom d-flex align-items-center justify-content-between">
+                                        <div class="badge open-now">Open now</div>
+                                        <div class="stars-ratings">
+                                            <span><i class="fas fa-star"></i></span>
+                                            177
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single-result-item -->
+
+                            <!-- single-result-item -->
+                            <div class="single-result-item d-flex align-items-center">
+                                <div class="result-item-img">
+                                    <img src="assets/img/result/06.png" alt="">
+                                </div>
+                                <div class="result-item-content">
+                                    <h6><a href="">Restaurant Name</a></h6>
+                                    <span class="tags">Greek, Fish, Salads</span>
+                                    <ul class="d-flex align-items-center flex-wrap">
+                                        <li><span><img src="assets/img/result/clock.png" alt=""></span>30min</li>
+                                        <li><span><img src="assets/img/result/delivery-man.png" alt=""></span>$50</li>
+                                        <li><span><img src="assets/img/result/bag.png" alt=""></span>Min. $100</li>
+                                    </ul>
+                                    <div class="result-bottom d-flex align-items-center justify-content-between">
+                                        <div class="badge open-now">Open now</div>
+                                        <div class="stars-ratings">
+                                            <span><i class="fas fa-star"></i></span>
+                                            177
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single-result-item -->
+
+                            <!-- single-result-item -->
+                            <div class="single-result-item d-flex align-items-center">
+                                <div class="result-item-img">
+                                    <img src="assets/img/result/07.png" alt="">
+                                </div>
+                                <div class="result-item-content">
+                                    <h6><a href="">Restaurant Name</a></h6>
+                                    <span class="tags">Greek, Fish, Salads</span>
+                                    <ul class="d-flex align-items-center flex-wrap">
+                                        <li><span><img src="assets/img/result/clock.png" alt=""></span>30min</li>
+                                        <li><span><img src="assets/img/result/delivery-man.png" alt=""></span>$50</li>
+                                        <li><span><img src="assets/img/result/bag.png" alt=""></span>Min. $100</li>
+                                    </ul>
+                                    <div class="result-bottom d-flex align-items-center justify-content-between">
+                                        <div class="badge open-now">Open now</div>
+                                        <div class="stars-ratings">
+                                            <span><i class="fas fa-star"></i></span>
+                                            177
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single-result-item -->
+
+                            <!-- single-result-item -->
+                            <div class="single-result-item d-flex align-items-center">
+                                <div class="result-item-img">
+                                    <img src="assets/img/result/01.png" alt="">
+                                </div>
+                                <div class="result-item-content">
+                                    <h6><a href="">Restaurant Name</a></h6>
+                                    <span class="tags">Greek, Fish, Salads</span>
+                                    <ul class="d-flex align-items-center flex-wrap">
+                                        <li><span><img src="assets/img/result/clock.png" alt=""></span>30min</li>
+                                        <li><span><img src="assets/img/result/delivery-man.png" alt=""></span>$50</li>
+                                        <li><span><img src="assets/img/result/bag.png" alt=""></span>Min. $100</li>
+                                    </ul>
+                                    <div class="result-bottom d-flex align-items-center justify-content-between">
+                                        <div class="badge open-now">Open now</div>
+                                        <div class="stars-ratings">
+                                            <span><i class="fas fa-star"></i></span>
+                                            177
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single-result-item -->
+
+                            <!-- single-result-item -->
+                            <div class="single-result-item d-flex align-items-center">
+                                <div class="result-item-img">
+                                    <img src="assets/img/result/02.png" alt="">
+                                </div>
+                                <div class="result-item-content">
+                                    <h6><a href="">Restaurant Name</a></h6>
+                                    <span class="tags">Greek, Fish, Salads</span>
+                                    <ul class="d-flex align-items-center flex-wrap">
+                                        <li><span><img src="assets/img/result/clock.png" alt=""></span>30min</li>
+                                        <li><span><img src="assets/img/result/delivery-man.png" alt=""></span>$50</li>
+                                        <li><span><img src="assets/img/result/bag.png" alt=""></span>Min. $100</li>
+                                    </ul>
+                                    <div class="result-bottom d-flex align-items-center justify-content-between">
+                                        <div class="badge open-now">Open now</div>
+                                        <div class="stars-ratings">
+                                            <span><i class="fas fa-star"></i></span>
+                                            177
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single-result-item -->
+
+                            <!-- single-result-item -->
+                            <div class="single-result-item d-flex align-items-center">
+                                <div class="result-item-img">
+                                    <img src="assets/img/result/03.png" alt="">
+                                </div>
+                                <div class="result-item-content">
+                                    <h6><a href="">Restaurant Name</a></h6>
+                                    <span class="tags">Greek, Fish, Salads</span>
+                                    <ul class="d-flex align-items-center flex-wrap">
+                                        <li><span><img src="assets/img/result/clock.png" alt=""></span>30min</li>
+                                        <li><span><img src="assets/img/result/delivery-man.png" alt=""></span>$50</li>
+                                        <li><span><img src="assets/img/result/bag.png" alt=""></span>Min. $100</li>
+                                    </ul>
+                                    <div class="result-bottom d-flex align-items-center justify-content-between">
+                                        <div class="badge open-now">Open now</div>
+                                        <div class="stars-ratings">
+                                            <span><i class="fas fa-star"></i></span>
+                                            177
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single-result-item -->
+
+                            <!-- single-result-item -->
+                            <div class="single-result-item d-flex align-items-center">
+                                <div class="result-item-img">
+                                    <img src="assets/img/result/04.png" alt="">
+                                </div>
+                                <div class="result-item-content">
+                                    <h6><a href="">Restaurant Name</a></h6>
+                                    <span class="tags">Greek, Fish, Salads</span>
+                                    <ul class="d-flex align-items-center flex-wrap">
+                                        <li><span><img src="assets/img/result/clock.png" alt=""></span>30min</li>
+                                        <li><span><img src="assets/img/result/delivery-man.png" alt=""></span>$50</li>
+                                        <li><span><img src="assets/img/result/bag.png" alt=""></span>Min. $100</li>
+                                    </ul>
+                                    <div class="result-bottom d-flex align-items-center justify-content-between">
+                                        <div class="badge open-now">Open now</div>
+                                        <div class="stars-ratings">
+                                            <span><i class="fas fa-star"></i></span>
+                                            177
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single-result-item -->
+
+                            <!-- single-result-item -->
+                            <div class="single-result-item d-flex align-items-center">
+                                <div class="result-item-img">
+                                    <img src="assets/img/result/05.png" alt="">
+                                </div>
+                                <div class="result-item-content">
+                                    <h6><a href="">Restaurant Name</a></h6>
+                                    <span class="tags">Greek, Fish, Salads</span>
+                                    <ul class="d-flex align-items-center flex-wrap">
+                                        <li><span><img src="assets/img/result/clock.png" alt=""></span>30min</li>
+                                        <li><span><img src="assets/img/result/delivery-man.png" alt=""></span>$50</li>
+                                        <li><span><img src="assets/img/result/bag.png" alt=""></span>Min. $100</li>
+                                    </ul>
+                                    <div class="result-bottom d-flex align-items-center justify-content-between">
+                                        <div class="badge open-now">Open now</div>
+                                        <div class="stars-ratings">
+                                            <span><i class="fas fa-star"></i></span>
+                                            177
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single-result-item -->
+
+                            <!-- single-result-item -->
+                            <div class="single-result-item d-flex align-items-center">
+                                <div class="result-item-img">
+                                    <img src="assets/img/result/06.png" alt="">
+                                </div>
+                                <div class="result-item-content">
+                                    <h6><a href="">Restaurant Name</a></h6>
+                                    <span class="tags">Greek, Fish, Salads</span>
+                                    <ul class="d-flex align-items-center flex-wrap">
+                                        <li><span><img src="assets/img/result/clock.png" alt=""></span>30min</li>
+                                        <li><span><img src="assets/img/result/delivery-man.png" alt=""></span>$50</li>
+                                        <li><span><img src="assets/img/result/bag.png" alt=""></span>Min. $100</li>
+                                    </ul>
+                                    <div class="result-bottom d-flex align-items-center justify-content-between">
+                                        <div class="badge open-now">Open now</div>
+                                        <div class="stars-ratings">
+                                            <span><i class="fas fa-star"></i></span>
+                                            177
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single-result-item -->
+
+                            <!-- single-result-item -->
+                            <div class="single-result-item d-flex align-items-center">
+                                <div class="result-item-img">
+                                    <img src="assets/img/result/07.png" alt="">
+                                </div>
+                                <div class="result-item-content">
+                                    <h6><a href="">Restaurant Name</a></h6>
+                                    <span class="tags">Greek, Fish, Salads</span>
+                                    <ul class="d-flex align-items-center flex-wrap">
+                                        <li><span><img src="assets/img/result/clock.png" alt=""></span>30min</li>
+                                        <li><span><img src="assets/img/result/delivery-man.png" alt=""></span>$50</li>
+                                        <li><span><img src="assets/img/result/bag.png" alt=""></span>Min. $100</li>
+                                    </ul>
+                                    <div class="result-bottom d-flex align-items-center justify-content-between">
+                                        <div class="badge open-now">Open now</div>
+                                        <div class="stars-ratings">
+                                            <span><i class="fas fa-star"></i></span>
+                                            177
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single-result-item -->
+
+                            <!-- single-result-item -->
+                            <div class="single-result-item d-flex align-items-center">
+                                <div class="result-item-img">
+                                    <img src="assets/img/result/01.png" alt="">
+                                </div>
+                                <div class="result-item-content">
+                                    <h6><a href="">Restaurant Name</a></h6>
+                                    <span class="tags">Greek, Fish, Salads</span>
+                                    <ul class="d-flex align-items-center flex-wrap">
+                                        <li><span><img src="assets/img/result/clock.png" alt=""></span>30min</li>
+                                        <li><span><img src="assets/img/result/delivery-man.png" alt=""></span>$50</li>
+                                        <li><span><img src="assets/img/result/bag.png" alt=""></span>Min. $100</li>
+                                    </ul>
+                                    <div class="result-bottom d-flex align-items-center justify-content-between">
+                                        <div class="badge open-now">Open now</div>
+                                        <div class="stars-ratings">
+                                            <span><i class="fas fa-star"></i></span>
+                                            177
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single-result-item -->
+
+                            <!-- single-result-item -->
+                            <div class="single-result-item d-flex align-items-center">
+                                <div class="result-item-img">
+                                    <img src="assets/img/result/02.png" alt="">
+                                </div>
+                                <div class="result-item-content">
+                                    <h6><a href="">Restaurant Name</a></h6>
+                                    <span class="tags">Greek, Fish, Salads</span>
+                                    <ul class="d-flex align-items-center flex-wrap">
+                                        <li><span><img src="assets/img/result/clock.png" alt=""></span>30min</li>
+                                        <li><span><img src="assets/img/result/delivery-man.png" alt=""></span>$50</li>
+                                        <li><span><img src="assets/img/result/bag.png" alt=""></span>Min. $100</li>
+                                    </ul>
+                                    <div class="result-bottom d-flex align-items-center justify-content-between">
+                                        <div class="badge open-now">Open now</div>
+                                        <div class="stars-ratings">
+                                            <span><i class="fas fa-star"></i></span>
+                                            177
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single-result-item -->
+
+                            <!-- single-result-item -->
+                            <div class="single-result-item d-flex align-items-center">
+                                <div class="result-item-img">
+                                    <img src="assets/img/result/03.png" alt="">
+                                </div>
+                                <div class="result-item-content">
+                                    <h6><a href="">Restaurant Name</a></h6>
+                                    <span class="tags">Greek, Fish, Salads</span>
+                                    <ul class="d-flex align-items-center flex-wrap">
+                                        <li><span><img src="assets/img/result/clock.png" alt=""></span>30min</li>
+                                        <li><span><img src="assets/img/result/delivery-man.png" alt=""></span>$50</li>
+                                        <li><span><img src="assets/img/result/bag.png" alt=""></span>Min. $100</li>
+                                    </ul>
+                                    <div class="result-bottom d-flex align-items-center justify-content-between">
+                                        <div class="badge open-now">Open now</div>
+                                        <div class="stars-ratings">
+                                            <span><i class="fas fa-star"></i></span>
+                                            177
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single-result-item -->
+
+                            <!-- single-result-item -->
+                            <div class="single-result-item d-flex align-items-center">
+                                <div class="result-item-img">
+                                    <img src="assets/img/result/04.png" alt="">
+                                </div>
+                                <div class="result-item-content">
+                                    <h6><a href="">Restaurant Name</a></h6>
+                                    <span class="tags">Greek, Fish, Salads</span>
+                                    <ul class="d-flex align-items-center flex-wrap">
+                                        <li><span><img src="assets/img/result/clock.png" alt=""></span>30min</li>
+                                        <li><span><img src="assets/img/result/delivery-man.png" alt=""></span>$50</li>
+                                        <li><span><img src="assets/img/result/bag.png" alt=""></span>Min. $100</li>
+                                    </ul>
+                                    <div class="result-bottom d-flex align-items-center justify-content-between">
+                                        <div class="badge open-now">Open now</div>
+                                        <div class="stars-ratings">
+                                            <span><i class="fas fa-star"></i></span>
+                                            177
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single-result-item -->
+
+                            <!-- single-result-item -->
+                            <div class="single-result-item d-flex align-items-center">
+                                <div class="result-item-img">
+                                    <img src="assets/img/result/05.png" alt="">
+                                </div>
+                                <div class="result-item-content">
+                                    <h6><a href="">Restaurant Name</a></h6>
+                                    <span class="tags">Greek, Fish, Salads</span>
+                                    <ul class="d-flex align-items-center flex-wrap">
+                                        <li><span><img src="assets/img/result/clock.png" alt=""></span>30min</li>
+                                        <li><span><img src="assets/img/result/delivery-man.png" alt=""></span>$50</li>
+                                        <li><span><img src="assets/img/result/bag.png" alt=""></span>Min. $100</li>
+                                    </ul>
+                                    <div class="result-bottom d-flex align-items-center justify-content-between">
+                                        <div class="badge open-now">Open now</div>
+                                        <div class="stars-ratings">
+                                            <span><i class="fas fa-star"></i></span>
+                                            177
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single-result-item -->
+
+                            <!-- single-result-item -->
+                            <div class="single-result-item d-flex align-items-center">
+                                <div class="result-item-img">
+                                    <img src="assets/img/result/06.png" alt="">
+                                </div>
+                                <div class="result-item-content">
+                                    <h6><a href="">Restaurant Name</a></h6>
+                                    <span class="tags">Greek, Fish, Salads</span>
+                                    <ul class="d-flex align-items-center flex-wrap">
+                                        <li><span><img src="assets/img/result/clock.png" alt=""></span>30min</li>
+                                        <li><span><img src="assets/img/result/delivery-man.png" alt=""></span>$50</li>
+                                        <li><span><img src="assets/img/result/bag.png" alt=""></span>Min. $100</li>
+                                    </ul>
+                                    <div class="result-bottom d-flex align-items-center justify-content-between">
+                                        <div class="badge open-now">Open now</div>
+                                        <div class="stars-ratings">
+                                            <span><i class="fas fa-star"></i></span>
+                                            177
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single-result-item -->
+
+                            <!-- single-result-item -->
+                            <div class="single-result-item d-flex align-items-center">
+                                <div class="result-item-img">
+                                    <img src="assets/img/result/07.png" alt="">
+                                </div>
+                                <div class="result-item-content">
+                                    <h6><a href="">Restaurant Name</a></h6>
+                                    <span class="tags">Greek, Fish, Salads</span>
+                                    <ul class="d-flex align-items-center flex-wrap">
+                                        <li><span><img src="assets/img/result/clock.png" alt=""></span>30min</li>
+                                        <li><span><img src="assets/img/result/delivery-man.png" alt=""></span>$50</li>
+                                        <li><span><img src="assets/img/result/bag.png" alt=""></span>Min. $100</li>
+                                    </ul>
+                                    <div class="result-bottom d-flex align-items-center justify-content-between">
+                                        <div class="badge open-now">Open now</div>
+                                        <div class="stars-ratings">
+                                            <span><i class="fas fa-star"></i></span>
+                                            177
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single-result-item -->
+
+                        </div>
+                        <!-- result-items-wrapper -->
+
+                        <!-- pagination-area -->
+                        <div class="pagination-area text-center">
+                            <ul class="d-flex align-items-center justify-content-center">
+                                <li><a class="active" href="">1</a></li>
+                                <li><a href="">2</a></li>
+                                <li><a href=""><i class="fas fa-arrow-right"></i></a></li>
+                            </ul>
+                        </div>
+                        <!-- pagination-area_End -->
+
+                    </div>
+                    <!-- filter-result-area_End -->
+
+                    
+
+                </div>
+           </div>
+       </section>
+       <!-- filter-wrapper_end -->
+
+
+
+
+    </main>
+    <!-- main -->
+
+    <!-- footer -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row footer-top-city">
+                <div class="col-lg-12">
+                    <div class="top-city-wrapper">
+                        <h5>OUR TOP CITIES</h5>
+                        <div class="top-city-wrapp">
+                            <div class="single-city-wrap">
+                                <ul>
+                                    <li><a href="">San Francisco</a></li>
+                                    <li><a href="">Miami</a></li>
+                                    <li><a href="">San Diego</a></li>
+                                    <li><a href="">East Bay</a></li>
+                                    <li><a href="">Long Beach</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-city-wrap">
+                                <ul>
+                                    <li><a href="">Los Angeles</a></li>
+                                    <li><a href="">Washington DC</a></li>
+                                    <li><a href="">Seattle</a></li>
+                                    <li><a href="">Portland</a></li>
+                                    <li><a href="">Nashville</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-city-wrap">
+                                <ul>
+                                    <li><a href="">New York City</a></li>
+                                    <li><a href="">Orange County</a></li>
+                                    <li><a href="">Atlanta</a></li>
+                                    <li><a href="">Charlotte</a></li>
+                                    <li><a href="">Denver</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-city-wrap">
+                                <ul>
+                                    <li><a href="">Chicago</a></li>
+                                    <li><a href="">Phoenix</a></li>
+                                    <li><a href="">LAs Vegas</a></li>
+                                    <li><a href="">Sacramento</a></li>
+                                    <li><a href="">Oklahoma City</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-city-wrap">
+                                <ul>
+                                    <li><a href="">Columbus</a></li>
+                                    <li><a href="">New Mexico</a></li>
+                                    <li><a href="">Albuquerque</a></li>
+                                    <li><a href="">Sacramento</a></li>
+                                    <li><a href="">New Orleans</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row footer-menus">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-6">
+                            <div class="footer-menu">
+                                <h5>COMPANY</h5>
+                                <ul>
+                                    <li><a href="">About Us</a></li>
+                                    <li><a href="">Team</a></li>
+                                    <li><a href="">Careers</a></li>
+                                    <li><a href="">Blog</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-6">
+                            <div class="footer-menu">
+                                <h5>CONTACT</h5>
+                                <ul>
+                                    <li><a href="">Help & Support</a></li>
+                                    <li><a href="">Partner with us</a></li>
+                                    <li><a href="">Ride with us</a></li>
+                                    <li><a href="">Work with us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-6">
+                            <div class="footer-menu">
+                                <h5>LEGAL</h5>
+                                <ul>
+                                    <li><a href="">Terms & Conditions</a></li>
+                                    <li><a href="">Refund & Cancellation</a></li>
+                                    <li><a href="">Privacy Policy</a></li>
+                                    <li><a href="">Cookie Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-6">
+                            <div class="footer-menu">
+                                <h5>CONTACT</h5>
+                                <ul>
+                                    <li><a href="">Terms & Conditions</a></li>
+                                    <li><a href="">Refund & Cancellation</a></li>
+                                    <li><a href="">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8 mx-md-auto">
+                    <div class="follow-us">
+                        <h5>FOLLOW US</h5>
+                        <h4>Receive exclusive offers and discounts in your mailbox</h4>
+                        <form action="">
+                            <div class="email-form-wrapper d-flex align-items-center justify-content-between">
+                                <div class="email-enput position-relative">
+                                    <input type="text" placeholder="Enter email">
+                                    <span><i class="fas fa-envelope"></i></span>
+                                </div>
+                                <button type="submit" class="btn btn-subcribe">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row copy-right text-center">
+                <span>All rights Reserved</span>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        
+    var $range = $(".js-range-slider"),
+    $from = $(".from"),
+    $to = $(".to"),
+    range,
+    min = $range.data('min'),
+    max = $range.data('max'),
+    from,
+    to;
+
+    var updateValues = function () {
+        $from.prop("value", from);
+        $to.prop("value", to);
+    };
+
+    $range.ionRangeSlider({
+        onChange: function (data) {
+        from = data.from;
+        to = data.to;
+        updateValues();
+        }
+    });
+
+    range = $range.data("ionRangeSlider");
+    var updateRange = function () {
+        range.update({
+            from: from,
+            to: to
+        });
+    };
+
+    $from.on("input", function () {
+        from = +$(this).prop("value");
+        if (from < min) {
+            from = min;
+        }
+        if (from > to) {
+            from = to;
+        }
+        updateValues();    
+        updateRange();
+    });
+
+    $to.on("input", function () {
+    to = +$(this).prop("value");
+    if (to > max) {
+        to = max;
+    }
+    if (to < from) {
+        to = from;
+    }
+    updateValues();    
+    updateRange();
+});
+
+
+
+
+    </script>
+</body>
+</html>
